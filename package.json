@@ -1,0 +1,14 @@
+{
+  "name": "generator-npm",
+  "version": "0.1.0",
+  "description": "A simple starting point for an NPM module.",
+  "files": ["app"],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "lodash": "^3.10.0",
+    "yeoman-generator": "^0.20.1"
+  }
+}
