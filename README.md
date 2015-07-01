@@ -9,6 +9,10 @@ See: http://substack.net/how_I_write_modules
 
     npm install -g yo gulp
 
+Clone the generator then run:
+
+    npm link
+
 
 ## Sequence
 1. Create a blank repo on github, clone to local system.
