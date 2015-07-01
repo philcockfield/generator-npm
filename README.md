@@ -1,10 +1,13 @@
 # NPM Module Generator
 A simple starting point for an NPM module.
 
-
 ## Substack: "How I Write Modules"
 See: http://substack.net/how_I_write_modules
 
+
+## Setup
+
+    npm install -g yo gulp
 
 
 ## Sequence
