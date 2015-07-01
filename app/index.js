@@ -51,8 +51,6 @@ module.exports = generators.Base.extend({
         }
 
         this.strings = answers;
-        console.log('this.strings', this.strings);
-
         done();
     }.bind(this));
   },
