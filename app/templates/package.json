@@ -28,8 +28,5 @@
   ],
   "author": "<%= author %>",
   "license": "MIT",
-  "bugs": {
-    "url": "<%= baseUrl %>/issues"
-  },
   "homepage": "<%= baseUrl %>"
 }
