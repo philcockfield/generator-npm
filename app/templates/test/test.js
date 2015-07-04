@@ -1,5 +1,5 @@
 'use strict'
-var { expect } = require('chai');
+import { expect } from 'chai';
 
 
 describe('Placeholder test', () => {

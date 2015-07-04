@@ -9,7 +9,7 @@
 
 # Test
     npm test
-    npm run tdd  # (Live reload)
+    npm run tdd  # (Watch)
 
 
 
