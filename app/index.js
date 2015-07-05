@@ -3,16 +3,16 @@ var _ = require('lodash');
 var generators = require('yeoman-generator');
 var chalk = require('chalk');
 
-/*
-  Generator for constructing a simple node module.
+/**
+*  Generator for constructing a simple node module.
 */
 module.exports = generators.Base.extend({
   constructor: function () {
     generators.Base.apply(this, arguments);
   },
 
-  /*
-    Asks for details about the module.
+  /**
+  *  Asks for details about the module.
   */
   prompting: function () {
     // See: https://github.com/SBoudrias/Inquirer.js
@@ -57,8 +57,8 @@ module.exports = generators.Base.extend({
 
 
 
-  /*
-    Copy over the file templates.
+  /**
+  *  Copy over the file templates.
   */
   writing: function () {
     var copy = function (file, copyTo, args) {
@@ -73,7 +73,9 @@ module.exports = generators.Base.extend({
     copy('README.md');
     copy('.gitignore');
     copy('package.json');
-    copy('index.js');
+    copy('gulpfile.js');
+    copy('.eslintrc');
+    copy('src/index.js');
     copy('test/test.js');
   }
 });
