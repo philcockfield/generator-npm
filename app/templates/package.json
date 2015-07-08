@@ -22,13 +22,7 @@
     "type": "git",
     "url": "<%= githubUrl %>"
   },
-  "keywords": [
-    "ui",
-    "testing",
-    "react",
-    "modular",
-    "design"
-  ],
+  "keywords": [],
   "author": "<%= author %>",
   "license": "MIT",
   "homepage": "<%= baseUrl %>"
