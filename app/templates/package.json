@@ -9,12 +9,12 @@
     "babel-eslint": "^3.1.20",
     "lodash": "^3.6.0",
     "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
     "gulp-eslint": "^0.15.0",
     "mocha": "^2.2.1",
     "chai": "^2.2.0"
   },
   "scripts": {
-    "start": "node .",
     "test": "./node_modules/mocha/bin/mocha --recursive --compilers js:babel/register",
     "tdd":  "./node_modules/mocha/bin/mocha --recursive --compilers js:babel/register --watch"
   },

@@ -72,6 +72,7 @@ module.exports = generators.Base.extend({
 
     copy('README.md');
     copy('.gitignore');
+    copy('.travis.yml');
     copy('package.json');
     copy('gulpfile.js');
     copy('.eslintrc');
