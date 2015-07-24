@@ -32,18 +32,30 @@ module.exports = generators.Base.extend({
         message: 'Description',
       }, {
         type: 'input',
-        name: 'author',
-        message: 'Author',
+        name: 'authorName',
+        message: 'Author Name',
+      },{
+        type: 'input',
+        name: 'authorEmail',
+        message: 'Author Email',
+      },{
+        type: 'input',
+        name: 'authorUrl',
+        message: 'Author Url',
       }, {
         type: 'input',
         name: 'githubUrl',
-        message: 'Github URL',
+        message: 'Github Url',
+      },{
+        name: 'keywords',
+        message: 'Key your keywords (comma to split)',
+        filter: _.words
       }
     ], function (answers) {
         // Store values.
         answers.name = answers.name || 'unnamed';
         answers.displayName = answers.displayName || answers.name;
-        answers.author = answers.author || 'Someone';
+        answers.authorName = answers.authorName || 'Someone';
         answers.baseUrl = '';
 
         if (answers.githubUrl !== '') {
@@ -65,18 +77,30 @@ module.exports = generators.Base.extend({
                   args = args || this.strings;
                   this.fs.copyTpl(
                     this.templatePath(file),
-                    this.destinationPath(this.strings.name + '/' + file),
+                    this.destinationPath(file),
                     this.strings
                   );
                 }.bind(this);
 
     copy('README.md');
     copy('.gitignore');
-    copy('.travis.yml');
     copy('package.json');
     copy('gulpfile.js');
     copy('.eslintrc');
+    copy('.npmignore');
     copy('src/index.js');
     copy('test/test.js');
+  },
+
+  default: function() {
+    this.composeWith('license', {
+      options: {
+        name: this.strings.authorName,
+        email: this.strings.authorEmail,
+        website: this.strings.authorUrl
+      }
+    }, {
+      local: require.resolve('generator-license/app')
+    });
   }
 });
