@@ -8,5 +8,8 @@
 
 
 ## Test
+    # Run tests.
     npm test
-    npm run tdd  # (Watch)
+
+    # Watch and re-run tests.
+    npm run tdd
