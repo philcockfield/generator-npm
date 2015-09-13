@@ -1,5 +1,4 @@
 "use strict";
-
 import { expect } from "chai";
 
 describe("<%= name %> tests", () => {
