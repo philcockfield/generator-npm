@@ -88,6 +88,7 @@ module.exports = generators.Base.extend({
     copy('gulpfile.js');
     copy('.eslintrc');
     copy('.npmignore');
+    copy('.travis.yml');
     copy('src/index.js');
     copy('test/test.js');
   },
