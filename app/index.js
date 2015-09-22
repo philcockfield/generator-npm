@@ -24,10 +24,6 @@ module.exports = generators.Base.extend({
         message: 'Module name',
       }, {
         type: 'input',
-        name: 'displayName',
-        message: 'Readme display name (if different)',
-      }, {
-        type: 'input',
         name: 'description',
         message: 'Description',
       }, {
@@ -54,7 +50,6 @@ module.exports = generators.Base.extend({
     ], function (answers) {
         // Store values.
         answers.name = answers.name || 'unnamed';
-        answers.displayName = answers.displayName || answers.name;
         answers.authorName = answers.authorName || 'Someone';
         answers.baseUrl = '';
 
