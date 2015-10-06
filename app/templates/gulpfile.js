@@ -19,8 +19,8 @@ gulp.task("watch", function(callback) { gulp.watch(SOURCE_PATH, ["build"]) });
 
 gulp.task("lint", function() {
   return gulp.src(SOURCE_PATH)
-    .pipe(eslint())
-    .pipe(eslint.format());
+             .pipe(eslint())
+             .pipe(eslint.format());
 });
 
 
