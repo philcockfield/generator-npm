@@ -77,13 +77,15 @@ module.exports = generators.Base.extend({
                   );
                 }.bind(this);
 
-    copy('README.md');
-    copy('.gitignore');
-    copy('package.json');
-    copy('gulpfile.js');
     copy('.eslintrc');
+    copy('.gitignore');
     copy('.npmignore');
     copy('.travis.yml');
+    copy('CHANGELOG.md');
+    copy('gulpfile.js');
+    copy('package.json');
+    copy('README.md');
+
     copy('src/index.js');
     copy('test/test.js');
   },

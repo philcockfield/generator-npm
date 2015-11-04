@@ -13,3 +13,7 @@
 
     # Watch and re-run tests.
     npm run tdd
+
+
+---
+### License: MIT
