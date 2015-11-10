@@ -7,8 +7,8 @@
     npm start
 
 
-## Test
-    # Run tests.
+## Tests
+
     npm test
 
 
