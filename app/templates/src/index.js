@@ -1,1 +1,3 @@
-console.log("\nStarted [<%= name %>]\n\n");
+console.log("");
+console.log("-- Started [<%= name %>] --");
+console.log("\n\n");

@@ -77,6 +77,7 @@ module.exports = generators.Base.extend({
                   );
                 }.bind(this);
 
+    copy('.babelrc');
     copy('.eslintrc');
     copy('.gitignore');
     copy('.npmignore');

@@ -6,14 +6,14 @@ var babel = require("gulp-babel");
 var SOURCE_PATH = "./src/**/*.js";
 
 
+
 gulp.task("build", function () {
   return gulp.src(SOURCE_PATH)
              .pipe(plumber()) // Keep task alive on build errors.
-             .pipe(babel({ stage: 1 }))
+             .pipe(babel({ presets: ["es2015", "stage-0"] }))
              .pipe(gulp.dest("lib"));
 });
 gulp.task("watch", function(callback) { gulp.watch(SOURCE_PATH, ["build"]) });
-
 
 
 
