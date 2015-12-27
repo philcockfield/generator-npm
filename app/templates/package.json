@@ -2,6 +2,7 @@
   "name": "<%= name %>",
   "version": "0.0.1",
   "description": "<%= description %>",
+  "engines": { "node": "^5.0.0" },
   "main": "./lib/index.js",
   "scripts": {
     "start": "node .",
