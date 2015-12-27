@@ -88,6 +88,7 @@ module.exports = generators.Base.extend({
     copy('README.md');
 
     copy('src/index.js');
+    copy('src/main.js');
     copy('test/test.js');
   },
 

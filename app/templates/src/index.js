@@ -1,3 +1,3 @@
-console.log("");
-console.log("-- Started [<%= name %>] --");
-console.log("\n\n");
+require("babel-polyfill");
+require("babel-core/register");
+require("./main");
