@@ -6,6 +6,9 @@
     "mocha": true
   },
   "rules": {
-    "strict": 0
+    "strict": 0,
+    "complexity": [2, 5],
+    "max-statements": [2, 15],
+    "max-depth": [1, 2]
   }
 }
