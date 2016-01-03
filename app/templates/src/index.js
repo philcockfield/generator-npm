@@ -1,2 +1,3 @@
-require("babel-core/register");
+"use strict"
+require("babel-register");
 require("./main");
