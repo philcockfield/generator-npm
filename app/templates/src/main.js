@@ -1,3 +1,2 @@
-console.log("");
-console.log("-- Started [<%= name %>] --");
-console.log("\n\n");
+import packageJson from "../package.json";
+console.log(`\n-- Started: ${ packageJson.name }@${ packageJson.version } --\n\n`);
