@@ -83,7 +83,6 @@ module.exports = generators.Base.extend({
     copy('.npmignore');
     copy('.travis.yml');
     copy('CHANGELOG.md');
-    copy('gulpfile.js');
     copy('package.json');
     copy('README.md');
 
