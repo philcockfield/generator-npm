@@ -88,6 +88,7 @@ module.exports = generators.Base.extend({
 
     copy('src/index.js');
     copy('src/main.js');
+    copy('src/log.js');
     copy('test/test.js');
   },
 

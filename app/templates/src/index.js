@@ -1,3 +1,2 @@
-"use strict"
-require("babel-register");
-require("./main");
+require('babel-register');
+require('./main');
