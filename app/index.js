@@ -1,5 +1,4 @@
 'use strict'
-var _ = require('lodash');
 var generators = require('yeoman-generator');
 var chalk = require('chalk');
 
@@ -84,10 +83,11 @@ module.exports = generators.Base.extend({
     copy('CHANGELOG.md');
     copy('package.json');
     copy('README.md');
+    copy('tsconfig.json');
+    copy('tslint.json');
 
-    copy('src/index.js');
-    copy('src/main.js');
-    copy('src/log.js');
+    copy('src/index.ts');
+    copy('src/util.ts');
     copy('test/test.js');
   },
 

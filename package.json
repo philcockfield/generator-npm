@@ -8,7 +8,6 @@
   ],
   "dependencies": {
     "chalk": "^1.1.0",
-    "lodash": "^3.10.0",
     "yeoman-generator": "^0.20.1",
     "generator-license": "^2.0.1"
   }
