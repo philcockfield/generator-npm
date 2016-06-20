@@ -24,7 +24,7 @@
     "type": "git",
     "url": "<%= githubUrl %>"
   },
-  "keywords": ["<%= keywords %>"],
+  "keywords": [],
   "author": {
     "name": "<%= authorName %>",
     "email": "<%= authorEmail %>",

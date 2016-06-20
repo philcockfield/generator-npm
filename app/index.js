@@ -30,22 +30,21 @@ module.exports = generators.Base.extend({
         type: 'input',
         name: 'authorName',
         message: 'Author Name',
+        default: 'Phil Cockfield'
       },{
         type: 'input',
         name: 'authorEmail',
         message: 'Author Email',
+        default: 'phil@cockfield.net'
       },{
         type: 'input',
         name: 'authorUrl',
         message: 'Author Url',
+        default: 'https://github.com/philcockfield/modules'
       }, {
         type: 'input',
         name: 'githubUrl',
         message: 'Github Url',
-      },{
-        name: 'keywords',
-        message: 'Key your keywords (comma to split)',
-        filter: _.words
       }
     ], function (answers) {
         // Store values.
