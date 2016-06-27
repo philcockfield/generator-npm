@@ -5,6 +5,7 @@
   ],
   "rules": {
     "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
     "quotemark": [
         true, "single"
     ],

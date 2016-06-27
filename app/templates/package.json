@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "start": "node .",
     "watch": "nodemon . -e js,jsx --ignore .build src",
-    "test": "./node_modules/mocha/bin/mocha --recursive --compilers js:babel-register",
+    "test": "./node_modules/mocha/bin/mocha --recursive",
     "tdd": "npm run test -- --reporter min --watch",
-    "lint": "./node_modules/eslint/bin/eslint.js --ext .js,.jsx src && ./node_modules/tslint/bin/tslint src/**/*.ts{,x}",
+    "lint": "./node_modules/tslint/bin/tslint src/*.ts{,x} src/**/*.ts{x}",
     "build": "./node_modules/typescript/bin/tsc",
     "prepublish": "npm test && npm run lint && npm run build"
   },
   "dependencies": {},
   "devDependencies": {
-    "js-babel": "^6.0.0",
-    "js-babel-dev": "^6.0.0",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "tslint": "^3.11.0",
