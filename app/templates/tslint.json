@@ -6,9 +6,8 @@
   "rules": {
     "no-consecutive-blank-lines": false,
     "object-literal-sort-keys": false,
-    "quotemark": [
-        true, "single"
-    ],
+    "no-var-requires": false,
+    "quotemark": [true, "single"],
     "no-console": false,
     "jsx-no-lambda": true
   }
