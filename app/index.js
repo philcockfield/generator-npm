@@ -1,6 +1,11 @@
 'use strict'
 var generators = require('yeoman-generator');
 var chalk = require('chalk');
+var childProcess = require('child_process');
+const exec = (cmd) => childProcess.execSync(cmd, { stdio: [0, 1, 2] });
+
+
+
 
 /**
 *  Generator for constructing a simple node module.
@@ -79,6 +84,7 @@ module.exports = generators.Base.extend({
     copy('.npmignore');
     copy('.travis.yml');
     copy('CHANGELOG.md');
+    copy('mocha.opts');
     copy('package.json');
     copy('README.md');
     copy('tsconfig.json');
@@ -86,7 +92,7 @@ module.exports = generators.Base.extend({
 
     copy('src/index.ts');
     copy('src/util.ts');
-    copy('test/test.js');
+    copy('src/tests/main.test.ts');
   },
 
   default: function() {
@@ -99,5 +105,13 @@ module.exports = generators.Base.extend({
     }, {
       local: require.resolve('generator-license/app')
     });
-  }
+  },
+
+  install: function() {
+    this.npmInstall(['typings', 'ts-node']);
+    exec('typings install chai --save');
+    exec('typings install env~mocha --save --global');
+    exec('typings install env~node --save --global');
+    this.npmInstall();
+  },
 });
