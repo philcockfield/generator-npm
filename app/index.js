@@ -90,9 +90,9 @@ module.exports = generators.Base.extend({
     copy('tsconfig.json');
     copy('tslint.json');
 
-    copy('src/index.ts');
-    copy('src/util.ts');
-    copy('src/tests/main.test.ts');
+    copy('src/code/index.ts');
+    copy('src/code/util.ts');
+    copy('src/test/main.test.ts');
   },
 
   default: function() {
