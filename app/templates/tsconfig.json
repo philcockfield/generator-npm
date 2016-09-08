@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
     "outDir": "./lib",
     "target": "es6",
-    "sourceMap": true,
+    "inlineSourceMap": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "isolatedModules": false,
@@ -21,5 +20,11 @@
   "exclude": [
     "node_modules",
     "lib"
+  ],
+  "include": [
+    "typings/index.d.ts",
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ]
 }

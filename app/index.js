@@ -84,15 +84,15 @@ module.exports = generators.Base.extend({
     copy('.npmignore');
     copy('.travis.yml');
     copy('CHANGELOG.md');
-    copy('mocha.opts');
+    copy('sh/unit-tests.sh');
     copy('package.json');
     copy('README.md');
     copy('tsconfig.json');
     copy('tslint.json');
 
-    copy('src/code/index.ts');
-    copy('src/code/util.ts');
-    copy('src/test/main.test.ts');
+    copy('src/index.ts');
+    copy('src/util.ts');
+    copy('test/main.test.ts');
   },
 
   default: function() {
@@ -108,10 +108,9 @@ module.exports = generators.Base.extend({
   },
 
   install: function() {
-    this.npmInstall(['typings', 'ts-node']);
     exec('typings install chai --save');
     exec('typings install env~mocha --save --global');
     exec('typings install env~node --save --global');
-    this.npmInstall();
+    exec('npm install');
   },
 });

@@ -2,22 +2,22 @@
   "name": "<%= name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
-  "main": "./lib/code/index.js",
-  "typings": "./lib/code/index.d.ts",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "start": "node .",
     "watch": "nodemon . -e js,jsx --ignore .build src",
-    "test": "node ./node_modules/mocha/bin/mocha --opts mocha.opts",
+    "test": "sh ./sh/unit-tests.sh",
     "tdd": "npm run test -- --reporter min --watch",
-    "lint": "node./node_modules/tslint/bin/tslint 'src/**/*.ts{,x}' --format verbose",
+    "lint": "node ./node_modules/tslint/bin/tslint 'src/**/*.ts{,x}' --format verbose",
     "build": "rm -rf ./lib && node ./node_modules/typescript/bin/tsc",
     "prepublish": "npm test && npm run lint && npm run build"
   },
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "js-typescript": "^1.0.1"
+    "mocha": "^3.0.2",
+    "js-typescript": "^2.0.2"
   },
   "repository": {
     "type": "git",
