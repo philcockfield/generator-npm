@@ -8,9 +8,9 @@
     "no-var-requires": false,
     "object-literal-sort-keys": false,
     "quotemark": [true, "single"],
-    "no-console": [false],
     "jsx-no-lambda": true,
     "no-shadowed-variable": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "only-arrow-functions": false
   }
 }

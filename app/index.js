@@ -84,7 +84,7 @@ module.exports = generators.Base.extend({
     copy('.npmignore');
     copy('.travis.yml');
     copy('CHANGELOG.md');
-    copy('sh/unit-tests.sh');
+    copy('sh/test.sh');
     copy('package.json');
     copy('README.md');
     copy('tsconfig.json');
@@ -109,8 +109,8 @@ module.exports = generators.Base.extend({
 
   install: function() {
     exec('typings install chai --save');
-    exec('typings install env~mocha --save --global');
-    exec('typings install env~node --save --global');
+    exec('typings install dt~mocha --save --global');
+    exec('typings install dt~node --save --global');
     exec('npm install');
   },
 });

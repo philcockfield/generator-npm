@@ -10,12 +10,16 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declaration": true,
-    "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
+    "skipLibCheck": true,
     "preserveConstEnums": true,
     "suppressImplicitAnyIndexErrors": true,
-    "pretty": true
+    "pretty": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": [
     "node_modules",
