@@ -1,6 +1,6 @@
 const write = (items) => {
   if (!log.silent) {
-    console.log(items.join(' '));
+    console.log(items.join(' ')); // tslint:disable-line
   }
 };
 
