@@ -1,2 +1,2 @@
-import { log } from './util';
-log.info(`\n-- Started --\n\n`);
+console.log(`\n-- Started --\n\n`); // tslint:disable-line
+

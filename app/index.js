@@ -91,8 +91,7 @@ module.exports = generators.Base.extend({
     copy('tslint.json');
 
     copy('src/index.ts');
-    copy('src/util.ts');
-    copy('test/main.test.ts');
+    copy('src/index.test.ts');
   },
 
   default: function() {
@@ -105,12 +104,5 @@ module.exports = generators.Base.extend({
     }, {
       local: require.resolve('generator-license/app')
     });
-  },
-
-  install: function() {
-    exec('typings install chai --save');
-    exec('typings install dt~mocha --save --global');
-    exec('typings install dt~node --save --global');
-    exec('npm install');
   },
 });

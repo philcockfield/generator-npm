@@ -6,7 +6,7 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "start": "node .",
-    "watch": "nodemon . -e js,jsx --ignore .build src",
+    "watch": "nodemon . -e js,jsx --ignore src",
     "test": "sh ./sh/test.sh",
     "tdd": "npm run test -- --reporter min --watch",
     "lint": "node ./node_modules/tslint/bin/tslint 'src/**/*.ts{,x}' --format verbose",
@@ -15,9 +15,15 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.45",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
-    "js-typescript": "^2.0.2"
+    "ts-node": "^1.4.1",
+    "tslint": "^3.15.1",
+    "tslint-react": "^1.0.0",
+    "typescript": "^2.0.3"
   },
   "repository": {
     "type": "git",
