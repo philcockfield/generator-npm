@@ -84,7 +84,6 @@ module.exports = generators.Base.extend({
     copy('.npmignore');
     copy('.travis.yml');
     copy('CHANGELOG.md');
-    copy('sh/test.sh');
     copy('package.json');
     copy('README.md');
     copy('tsconfig.json');
