@@ -12,5 +12,3 @@
     npm test
 
 
----
-### License: MIT
