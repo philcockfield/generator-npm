@@ -1,6 +1,11 @@
 .DS_Store
 .build
-lib
+.npmrc
+.env
+/dist
+/lib
+/TEMP.md
+
 node_modules
 npm-debug.log
-typings
+yarn-error.log
