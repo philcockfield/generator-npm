@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
   "scripts": {
     "start": "node .",
     "watch": "nodemon . -e js,jsx --ignore src",
-    "test": "export TS_NODE_FAST=true && ./node_modules/mocha/bin/mocha --require ts-node/register --watch-extensions ts,tsx 'src/**/*.test.ts{,x}'",
-    "tdd": "npm run test -- --reporter min --watch",
-    "lint": "node ./node_modules/tslint/bin/tslint 'src/**/*.ts{,x}' --format verbose",
-    "build": "rm -rf ./lib && node ./node_modules/typescript/bin/tsc",
-    "prepublish": "npm run lint && npm test && npm run build"
+    "test": "export TS_NODE_FAST=true && mocha --require ts-node/register --watch-extensions ts,tsx 'src/**/*.test.ts{,x}'",
+    "tdd": "yarn run test -- --reporter min --watch",
+    "lint": "tslint 'src/**/*.ts{,x}' --format verbose",
+    "build": "rm -rf ./lib && tsc",
+    "prepublish": "yarn run lint && yarn test && yarn run build"
   },
   "dependencies": {},
   "devDependencies": {
@@ -19,11 +18,11 @@
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.45",
     "chai": "^3.5.0",
-    "mocha": "^3.0.2",
-    "ts-node": "^1.4.1",
-    "tslint": "^3.15.1",
-    "tslint-react": "^1.0.0",
-    "typescript": "^2.0.3"
+    "mocha": "^3.2.0",
+    "ts-node": "^1.7.2",
+    "tslint": "^4.2.0",
+    "tslint-react": "^2.2.0",
+    "typescript": "^2.1.4"
   },
   "repository": {
     "type": "git",

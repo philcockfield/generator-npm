@@ -26,7 +26,6 @@
     "lib"
   ],
   "include": [
-    "typings/index.d.ts",
     "src/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
