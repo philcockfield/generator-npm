@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "start": "node .",
     "watch": "nodemon . -e js,jsx --ignore src",
